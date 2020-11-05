@@ -1,0 +1,131 @@
+.content-box1 {
+    grid-area: cb;
+    display: grid;
+    grid-template-rows: 65px auto auto auto auto;
+    grid-template-columns: repeat(5, 100%);
+    grid-template-areas: 
+    "hea"
+    "car"
+    "abo"
+    "quo"
+    "for";
+}
+
+.header {
+    grid-area: hea;
+    display: grid;
+    background-color: #2c4c5c;
+    color: #ffffff;
+    grid-template-areas: "lef mid rig";
+}
+
+#left {
+    grid-area: lef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#middle {
+    grid-area: mid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#right {
+    grid-area: rig;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card-cont {
+    grid-area: car;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#card {
+    display: grid;
+    min-width: 150px;
+    max-width: 50%;
+    background-color: #d1e0e7;
+    font-size: 12px;
+    grid-template-areas: 
+    "ti de";
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.about {
+    grid-area: abo;
+    display: grid;
+    grid-template-areas: 
+    "ab1"
+    "ab2";
+}
+
+.ab1 {
+    grid-area: ab1;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.ab2 {
+    grid-area: ab2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.no-space1 {
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+.no-space2 {
+    padding: 0;
+    margin-top: px;
+    margin-bottom: 0;
+}
+
+.quote {
+    grid-area: quo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+
+.form {
+    grid-area: for;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding: 20px;
+    background-color: #d0e3ec;
+}
+
+#icon {
+    width: 35px;
+    height: 35px;
+}
+
+#profile, #logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
