@@ -48,7 +48,6 @@
 }
 
 .card {
-	/*height: 40vh;*/
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 20vw;
